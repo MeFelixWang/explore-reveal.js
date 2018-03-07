@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reveal</title>
+    <link href="https://cdn.bootcss.com/reveal.js/3.6.0/css/reveal.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/reveal.js/3.6.0/css/theme/white.min.css" rel="stylesheet">
+    <style>
+        .chart {
+            width: 960px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>REVEAL.JS</h2>
+            <h4>没事用reveal.js、echarts.js、mock.js写着玩</h4>
+        </section>
+        <section data-title="line">
+            <div id="line" class="chart"></div>
+        </section>
+        <section data-title="polar">
+            <div id="polar" class="chart"></div>
+        </section>
+        <section>
+            <section>
+                <h2>这里是嵌套的</h2>
+                <h4>按“下”</h4>
+                <h4 class="fragment">试</h4>
+                <h4 class="fragment">试</h4>
+                <h4 class="fragment">看</h4>
+            </section>
+            <section data-transition="concave" data-title="color">
+                <div id="color" class="chart"></div>
+            </section>
+            <section data-transition="zoom" data-title="tree">
+                <div id="tree" class="chart"></div>
+            </section>
+        </section>
+        <section data-title="scatter">
+            <div id="scatter" class="chart"></div>
+        </section>
+        <section>
+            <h2>就到这里了</h2>
+            <h4>感受：reveal很棒，echarts很强，mock很好用</h4>
+            <h4>温馨提示：模拟的数据量太大真的很卡，谨慎！</h4>
+        </section>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/reveal.js/3.6.0/js/reveal.min.js"></script>
+<script src="https://cdn.bootcss.com/echarts/4.0.4/echarts.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+<script src="macarons.js"></script>
+<script src="https://cdn.bootcss.com/Mock.js/1.0.1-beta3/mock-min.js"></script>
+<script src="reveal.js"></script>
+</body>
+</html>
